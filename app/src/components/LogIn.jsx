@@ -9,7 +9,7 @@ function StartPage() {
                 </li>
 
                 <li className="list-elem">
-                    <Link className="start-link" to="task2">Лаба 3</Link>
+                    <Link className="start-link" to="task3">Лаба 3</Link>
                 </li>
 
                 <li className="list-elem">
