@@ -1,23 +1,26 @@
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import StartPage from './components/LogIn';
+
+import Task2 from './components/tasks/Task2';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Header />
+      <Routes>
+        <Route path="/" element={<StartPage />} />
+        <Route path="task2" element={<Task2 />} />
+      </Routes>
+    </BrowserRouter>
+    // <div className="App">
+    //   <header className="App-header">
+        
+    //   </header>
+
+    //   <StartPage />
+    // </div>
   );
 }
 
