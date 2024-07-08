@@ -6,8 +6,11 @@ const StartPage = () => {
   return (
         <>
             <header>
-                <img width="250px" src={logo} />
+                <a target='_blank' href="https://www.brsu.by/">
+                    <img width="250px" src={logo} />
+                </a>
             </header>
+            
             <div className="registration-page">
                 <form className="registration-form">
                     <h1>Зарегистрироваться</h1>
