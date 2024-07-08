@@ -5,13 +5,11 @@ import logo from "./img/logo.png"
 import photo from "./img/photo.jpg"
 
 const StudentDashboard = () => {
-
   const styles={
     background: `url(${photo})`,
     backgroundSize: "cover",
     backgroundPosition: "center"
   }
-
   return (
     <div className="student-dashboard">
 
@@ -38,35 +36,38 @@ const StudentDashboard = () => {
           </div>
         </div>
 
-        <div className="schedule">
-          <h2>Расписание</h2>
-          <div className="day">
-            <h3>Понедельник</h3>
-            <div className="class">
-              <time>8:30</time>
-              <p>Теория функции комплексной переменной</p>
-              <p>Грищук Е.В.</p>
-              <p>614</p>
+        <h1>Расписание</h1>
+
+
+          <div className="days">
+            <div className="day" id="monday">
+                <h5>
+                  Понедельник
+                </h5>
             </div>
-            <div className="class">
-              <time>10:05</time>
-              <p>Основы программирования</p>
-              <p>Мацкевич Е.А.</p>
-              <p>620</p>
+
+            <div className="day" id="tuesday">
+
             </div>
-            <div className="class">
-              <time>11:55</time>
-              <p>Средства управления базами данных (Практика)</p>
-              <p>Кондратюк А.П.</p>
-              <p>616</p>
+
+            <div className="day" id="wednesday">
+
             </div>
-            <div className="class">
-              <time>13:30</time>
-              <p>Нет пары</p>
+
+            <div className="day" id="thursday">
+
+            </div>
+
+            <div className="day" id="friday">
+
+            </div>ы
+
+            <div className="day" id="saturday">
+
             </div>
           </div>
-          {/* Repeat similar structure for other days */}
-        </div>
+
+
       </div>
     </div>
   );
