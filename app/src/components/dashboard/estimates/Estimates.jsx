@@ -3,28 +3,44 @@ function Estimates() {
         <>
             <h1>Оценки</h1>
 
-            <table>
+            <table className="estimate-table">
                 <tr>
-                    <td>
+                    <td className="name">
                         Название дисциплины
                     </td>
                     <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
+                        Дата
                     </td>
                 </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
+                <tr className="second-table">
+                    <td>
+                        <table>
+                            <tr className="gray">
+                                <td>Математический анализ</td>
+                            </tr>
+
+                            <tr>
+                                <td>Функциональный анализ</td>
+                            </tr>
+
+                            <tr className="gray">
+                                <td>УМФ</td>
+                            </tr>
+
+                            <tr>
+                                <td>Численные Методы</td>
+                            </tr>
+
+                            <tr className="gray">
+                                <td>Привет</td>
+                            </tr>
+
+                            <tr>
+                                <td>Привет</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
             </table>
         </>
     )

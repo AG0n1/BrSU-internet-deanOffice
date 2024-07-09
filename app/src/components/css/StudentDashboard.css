@@ -113,3 +113,39 @@
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+
+.estimate-table {
+  width: 100%;
+  margin-top: 1rem  
+}
+
+.estimate-table tr td {
+  text-align: center;
+  font-size: 20px;
+}
+
+.name {
+  width: 30%;
+}
+
+.second-table {
+  overflow-y: scroll;
+}
+
+.second-table table {
+  width: 100%
+}
+
+.second-table table tr {
+  height: 40px;
+}
+
+.second-table table td {
+  text-align: left;
+  
+  padding-left: 0.7rem;
+}
+
+.gray {
+  background: rgb(220, 220, 220)
+}
