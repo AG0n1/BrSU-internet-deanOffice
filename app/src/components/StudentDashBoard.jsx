@@ -1,10 +1,19 @@
 import React from 'react';
 import './css/StudentDashboard.css';
 import Timetable from './dashboard/timetable/Timetable';
+import Estimates from './dashboard/estimates/Estimates';
 import logo from "./img/logo.png"
 import photo from "./img/photo.jpg"
 
 const StudentDashboard = () => {
+  
+  const changeComponent = (e) => {
+    console.log(e.target.textContent)
+    switch (e.target.textContent) {
+
+    }
+  }
+
   const styles={
     background: `url(${photo})`,
     backgroundSize: "cover",
@@ -18,8 +27,8 @@ const StudentDashboard = () => {
       <div className="sidebar">
         <img width="100%" src={logo} />
         <nav>
-          <a href="/schedule">Расписание</a>
-          <a href="/grades">Оценки</a>
+          <button onClick={changeComponent}>Расписание</button>
+          <button onClick={changeComponent}>Оценки</button>
         </nav>
       </div>
 
@@ -39,7 +48,7 @@ const StudentDashboard = () => {
         </div>
 
        {timetable && <Timetable />}
-
+       {estimates && <Estimates />}
 
       </div>
     </div>
