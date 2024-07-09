@@ -4,40 +4,33 @@ import Timetable from './dashboard/timetable/Timetable';
 import Estimates from './dashboard/estimates/Estimates';
 import logo from "./img/logo.png"
 import photo from "./img/photo.jpg"
+import { useState } from 'react';
 
 const StudentDashboard = () => {
   
-  const changeComponent = (e) => {
-    console.log(e.target.textContent)
-    switch (e.target.textContent) {
+  const [show, setShow] = useState("Расписание");
 
-    }
-  }
-
-  const styles={
+  const styles = {
     background: `url(${photo})`,
     backgroundSize: "cover",
     backgroundPosition: "center"
-  }
-  let timetable = true,
-      estimates = false
+  };
+
   return (
     <div className="student-dashboard">
 
       <div className="sidebar">
-        <img width="100%" src={logo} />
+        <img width="100%" src={logo} alt="Logo" />
         <nav>
-          <button onClick={changeComponent}>Расписание</button>
-          <button onClick={changeComponent}>Оценки</button>
+          <button onClick={() => setShow("Расписание")}>Расписание</button>
+          <button onClick={() => setShow("Оценки")}>Оценки</button>
         </nav>
       </div>
 
       <div className="main-content">
         <div className="profile">
           <div className="profile-info">
-            <div style={styles} className="img">
-
-            </div>
+            <div style={styles} className="img"></div>
 
             <div className="profile-text">
               <h1>Евгений Савчук</h1>
@@ -46,10 +39,8 @@ const StudentDashboard = () => {
             </div>
           </div>
         </div>
-
-       {timetable && <Timetable />}
-       {estimates && <Estimates />}
-
+        {show === "Расписание" && <Timetable />}
+        {show === "Оценки" && <Estimates />}
       </div>
     </div>
   );

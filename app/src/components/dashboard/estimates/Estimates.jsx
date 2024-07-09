@@ -6,10 +6,10 @@ function Estimates() {
             <table>
                 <tr>
                     <td>
-                        Называние дисциплины
+                        Название дисциплины
                     </td>
                     <td>
-                        
+
                     </td>
                     <td>
 
