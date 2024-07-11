@@ -32,11 +32,11 @@ function Estimates() {
                             </tr>
 
                             <tr className="gray">
-                                <td>Привет</td>
+                                <td>Lorem</td>
                             </tr>
 
                             <tr>
-                                <td>Привет</td>
+                                <td>ipsum</td>
                             </tr>
                         </table>
                     </td>
