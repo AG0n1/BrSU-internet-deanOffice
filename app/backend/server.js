@@ -1,14 +1,17 @@
 const express = require('express');
+const cors = require('cors')
 const app = express();
+
+app.use(cors())
 
 const users = {
     name: 'John Doe',
     age: 20
 };
 
-app.get("/", (req, res) => {
-    console.log("Root route accessed");
-    res.send("Hey there");
+app.post("/getLessonsData", (req, res) => {
+    let {user} = req.body
+    console.log(user)
 });
 
 app.post("/checkUserData", (res, req) => {

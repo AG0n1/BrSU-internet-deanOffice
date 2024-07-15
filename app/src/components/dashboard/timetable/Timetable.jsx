@@ -1,4 +1,15 @@
+import Lesson from "./Lesson"
+
 function Timetable() {
+
+  fetch("http://localhost:3001/getLessonsData", {
+    method: "POST",
+    headers: {
+
+    },
+    body: JSON.stringify({user: null})
+  })
+
     return (
         <>
         <h1>Расписание</h1>
@@ -10,7 +21,10 @@ function Timetable() {
         Понедельник
       </h3>
       <div>
-        
+        <Lesson />
+        <Lesson />
+        <Lesson />
+        <Lesson />
       </div>
   </div>
 
