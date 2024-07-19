@@ -2,13 +2,13 @@ import Lesson from "./Lesson"
 
 function Timetable() {
 
-  fetch("http://localhost:3001/getLessonsData", {
-    method: "POST",
-    headers: {
-
-    },
-    body: JSON.stringify({user: null})
-  })
+  // fetch("http://localhost:3001/getLessonsData", {
+  //   method: "POST",
+  //   headers: {
+      
+  //   },
+  //   body: JSON.stringify({user: null})
+  // })
 
     return (
         <>
@@ -33,7 +33,10 @@ function Timetable() {
         Вторник
       </h3>
       <div>
-        
+          <Lesson />
+          <Lesson />
+          <Lesson />
+          <Lesson />
       </div>
   </div>
 
@@ -42,7 +45,10 @@ function Timetable() {
         Среда
       </h3>
       <div>
-        
+      <Lesson />
+          <Lesson />
+          <Lesson />
+          <Lesson />
       </div>
   </div>
 
@@ -51,7 +57,10 @@ function Timetable() {
         Четверг
       </h3>
       <div>
-        
+      <Lesson />
+          <Lesson />
+          <Lesson />
+          <Lesson />
       </div>
   </div>
 
@@ -60,7 +69,10 @@ function Timetable() {
         Пятница
       </h3>
       <div>
-        
+      <Lesson />
+          <Lesson />
+          <Lesson />
+          <Lesson />
       </div>
   </div>
 
@@ -69,7 +81,10 @@ function Timetable() {
         Суббота
       </h3>
       <div>
-        
+      <Lesson />  
+          <Lesson />
+          <Lesson />
+          <Lesson />
       </div>
   </div>
 </div>

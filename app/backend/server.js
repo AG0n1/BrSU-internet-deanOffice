@@ -10,8 +10,7 @@ const users = {
 };
 
 app.post("/getLessonsData", (req, res) => {
-    let {user} = req.body
-    console.log(user)
+    console.log(req)
 });
 
 app.post("/checkUserData", (res, req) => {
